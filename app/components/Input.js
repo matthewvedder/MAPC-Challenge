@@ -17,7 +17,7 @@ const Input = React.createClass({
           name={this.props.name}
           onChange={this.changeValue}
           value={this.getValue()}
-          checked={this.props.type === 'checkbox' && this.getValue() ? 'checked' : null}
+          placeholder={this.props.placeholder}
         />
         <span className='validation-error'>{errorMessage}</span>
       </div>
