@@ -1,0 +1,41 @@
+h5 {
+  margin-bottom: -5px;
+}
+
+input {
+  width: 40%;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+#app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background: transparent;
+  width: 70%;
+}
+
+
+.form-group {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline;
+}
+
+.validation-error {
+  color: orange;
+  display: inline-block;
+}
+
+.button {
+  margin-top: 20px;
+  display: block;
+}
+
+

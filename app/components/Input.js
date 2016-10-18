@@ -1,6 +1,7 @@
 const React = require('react');
 const { Form } = require('formsy-react');
 
+
 const Input = React.createClass({
   mixins: [Formsy.Mixin],
   changeValue(event) {
@@ -10,7 +11,7 @@ const Input = React.createClass({
     const className = 'form-group' + (this.props.className || ' ') + (this.showRequired() ? 'required' : this.showError() ? 'error' : null);
     const errorMessage = this.getErrorMessage();
     return (
-      <div className={className}>
+      <div className={className + 'form-control'}>
         <label htmlFor={this.props.name}>{this.props.title}</label>
         <input
           type={this.props.type || 'text'}
