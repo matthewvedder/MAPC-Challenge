@@ -2,6 +2,7 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const Form = require('./components/Form');
 const Input = require('./components/Input');
+const routes = require('./config/routes');
 
 
-ReactDOM.render(<Form />, document.getElementById('app'));
+ReactDOM.render(routes, document.getElementById('app'));
