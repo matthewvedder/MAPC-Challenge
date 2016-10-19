@@ -11,7 +11,7 @@ const Input = React.createClass({
     const className = 'form-group' + (this.props.className || ' ') + (this.showRequired() ? 'required' : this.showError() ? 'error' : null);
     const errorMessage = this.getErrorMessage();
     return (
-      <div className={className + 'form-control'}>
+      <div className={className + 'col-xs-12'}>
         <label htmlFor={this.props.name}>{this.props.title}</label>
         <input
           type={this.props.type || 'text'}
