@@ -39,7 +39,7 @@ input {
 
 @media only screen and (max-device-width: 500px) {
   input {
-    width: 70%;
+    width: 100%;
   }
   .form-group {
     display: block;
