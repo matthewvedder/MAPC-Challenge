@@ -20,6 +20,10 @@ input {
   margin-right: 1.5em;
 }
 
+.thank-you {
+
+}
+
 .validation-error {
   color: orange;
   display: block;

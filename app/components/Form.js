@@ -10,17 +10,26 @@ require('../styles.css');
 
 const link = 'here'.link('#')
 const myForm = React.createClass({
+  contextTypes: {
+  router: React.PropTypes.object.isRequired
+  },
   getInitialState() {
     return { canSubmit: false };
   },
   submit(data) {
     return axios.post('https://shielded-citadel-11180.herokuapp.com/users', data)
-      .then(function (response) {
-        if ( response.data.email_exists === true ) {
-          this.setState({ message: 'An account with the email ' + data.email + ' already exists! Please sign in.' });
-        } else {
-          this.setState({ message: null })
-        }
+    .then(function (response) {
+      if ( response.data.email_exists === true ) {
+        this.setState({ message: 'An account with the email ' + data.email + ' already exists! Please sign in.' });
+      } else {
+        this.context.router.push({
+          pathname: '/thank-you',
+          state: {
+            first_name: data.first_name,
+            email: data.email
+          }
+        })
+      }
     }.bind(this))
   },
   enableButton() {
