@@ -8,7 +8,6 @@ const axios = require ('axios');
 require('../styles.css');
 
 
-const link = 'here'.link('#')
 const myForm = React.createClass({
   contextTypes: {
   router: React.PropTypes.object.isRequired
@@ -42,7 +41,7 @@ const myForm = React.createClass({
     return (
       <MainContainer title="Start Your Free Demo">
         <Form onSubmit={this.submit} onValid={this.enableButton} onInvalid={this.disableButton} >
-          <p>{this.state.message}</p>
+          <a href="#" className='error-message'>{this.state.message}</a>
           <InputContainer title="Name">
             <Input value="" name="first_name" placeholder="First Name" type="text" required />
             <Input value="" name="last_name" placeholder="Last Name" type="text" required />

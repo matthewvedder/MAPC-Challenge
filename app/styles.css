@@ -8,11 +8,11 @@
 
 .main-container {
   background: transparent;
-  width: 50%;
+  width: 40%;
 }
 
 input {
-  width: 100%;
+  width: 90%;
 }
 
 .input {
@@ -20,8 +20,13 @@ input {
   margin-right: 1.5em;
 }
 
-.thank-you {
+.error-message {
+  color: orange;
+}
 
+.error-message:hover {
+  color: green;
+  text-decoration: none;
 }
 
 .validation-error {
@@ -36,6 +41,10 @@ input {
 
 .input-container {
   margin-top: 1.5em;
+}
+
+.thank-you {
+  text-align: center;
 }
 
 
