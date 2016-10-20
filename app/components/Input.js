@@ -8,7 +8,7 @@ const Input = React.createClass({
     this.setValue(event.currentTarget[this.props.type === 'checkbox' ? 'checked' : 'value']);
   },
   render() {
-    const className = 'form-group' + (this.props.className || ' ') + (this.showRequired() ? 'required' : this.showError() ? 'error' : null);
+    const className = 'input' + (this.props.className || ' ') + (this.showRequired() ? 'required' : this.showError() ? 'error' : null);
     const errorMessage = this.getErrorMessage();
     return (
       <div className={className + 'col-xs-12'}>
