@@ -40,7 +40,7 @@ const myForm = React.createClass({
           </InputContainer>
           <InputContainer title="Account">
             <Input value="" name="email" placeholder="Email" validations="isEmail" validationError="Are you sure this is a valid email?" required />
-            <Input value="" name="password" placeholder="Password" type="password" required />
+            <Input value="" name="password" placeholder="Password" type="password" validations="minLength:6" validationError="Password must be at least six characters" required />
           </InputContainer>
           <InputContainer title="Project Information">
             <Input value="" name="project_name" placeholder="Project Name" type="text" required />
