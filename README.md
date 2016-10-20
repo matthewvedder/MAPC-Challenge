@@ -5,7 +5,8 @@ A form built in React with front end validations and a Rails API.
 Clone the repository and run:
   + npm install  
   + npm start  
-
+  + visit localhost:8080  
+  
 ...and you should be all set! The Rails API is hosted on Heroku, so no setup needed there.
 
 ## Summary
